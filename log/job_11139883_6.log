@@ -1,0 +1,35 @@
+000 (11139883.006.000) 2023-07-20 06:17:26 Job submitted from host: <128.104.101.92:9618?addrs=128.104.101.92-9618+[2607-f388-107c-501-a236-9fff-fe3c-caa8]-9618&alias=submit2.chtc.wisc.edu&noUDP&sock=schedd_1879732_618e>
+...
+040 (11139883.006.000) 2023-07-20 06:20:34 Started transferring input files
+	Transferring to host: <128.105.69.219:9618?addrs=128.105.69.219-9618&alias=e2602.chtc.wisc.edu&noUDP&sock=slot1_6_2200493_2263_19549>
+...
+040 (11139883.006.000) 2023-07-20 06:20:39 Finished transferring input files
+...
+001 (11139883.006.000) 2023-07-20 06:20:40 Job executing on host: <128.105.69.219:9618?addrs=128.105.69.219-9618&alias=e2602.chtc.wisc.edu&noUDP&sock=startd_18812_0bb7>
+	SlotName: slot1_6@e2602.chtc.wisc.edu
+	CondorScratchDir = "/var/lib/condor/execute/slot1/dir_726669"
+	Cpus = 1
+	Disk = 1458998
+	IoHeavy = 0
+	Memory = 512
+...
+006 (11139883.006.000) 2023-07-20 06:20:48 Image size of job updated: 264368
+	256  -  MemoryUsage of job (MB)
+	261632  -  ResidentSetSize of job (KB)
+...
+006 (11139883.006.000) 2023-07-20 06:25:48 Image size of job updated: 524288
+	475  -  MemoryUsage of job (MB)
+	485772  -  ResidentSetSize of job (KB)
+...
+006 (11139883.006.000) 2023-07-20 06:30:49 Image size of job updated: 524288
+	493  -  MemoryUsage of job (MB)
+	504376  -  ResidentSetSize of job (KB)
+...
+006 (11139883.006.000) 2023-07-20 06:35:49 Image size of job updated: 524288
+	504  -  MemoryUsage of job (MB)
+	515184  -  ResidentSetSize of job (KB)
+...
+006 (11139883.006.000) 2023-07-20 07:00:52 Image size of job updated: 524288
+	506  -  MemoryUsage of job (MB)
+	517320  -  ResidentSetSize of job (KB)
+...
