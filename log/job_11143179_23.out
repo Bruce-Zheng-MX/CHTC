@@ -1,0 +1,8 @@
+gcc -I"/var/lib/condor/execute/slot1/dir_14981/R/lib64/R/include" -DNDEBUG   -I/usr/local/include   -fpic  -g -O2  -c wbs.c -o wbs.o
+gcc -I"/var/lib/condor/execute/slot1/dir_14981/R/lib64/R/include" -DNDEBUG   -I/usr/local/include   -fpic  -g -O2  -c wbs_init.c -o wbs_init.o
+gcc -shared -L/usr/local/lib64 -o wbs.so wbs.o wbs_init.o
+gcc -I"/var/lib/condor/execute/slot1/dir_14981/R/lib64/R/include" -DNDEBUG   -I/usr/local/include  -fopenmp -fpic  -g -O2  -c changepoints_tree.c -o changepoints_tree.o
+gcc -I"/var/lib/condor/execute/slot1/dir_14981/R/lib64/R/include" -DNDEBUG   -I/usr/local/include  -fopenmp -fpic  -g -O2  -c contrasts.c -o contrasts.o
+gcc -I"/var/lib/condor/execute/slot1/dir_14981/R/lib64/R/include" -DNDEBUG   -I/usr/local/include  -fopenmp -fpic  -g -O2  -c not.c -o not.o
+gcc -I"/var/lib/condor/execute/slot1/dir_14981/R/lib64/R/include" -DNDEBUG   -I/usr/local/include  -fopenmp -fpic  -g -O2  -c not_init.c -o not_init.o
+gcc -shared -L/usr/local/lib64 -o not.so changepoints_tree.o contrasts.o not.o not_init.o -fopenmp
