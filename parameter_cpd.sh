@@ -1,7 +1,7 @@
 #!/bin/bash
-for a in {1..30}; 
+for a in {1..6}; 
   do 
-    for b in {2..2};
+    for b in {1..1};
       do
         echo "$a $b"
       done;
