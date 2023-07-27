@@ -107,21 +107,34 @@ seedBS <- function (x, decay = sqrt(2), ...){
 
 L<-100;minLen<-20
 c<-0.1;num_permut<-1000
-n<-95
-seed_I<-seeded.intervals(n,decay = sqrt(2))
+
+seed_I<-seeded.intervals(95-34,decay = sqrt(2))
 seed_I<-seed_I[(seed_I[,2]-seed_I[,1])>minLen,]
-path<-paste('seed_I_1_95.Rdata')
+seed_I<-seed_I+34
+path<-paste('seed_I_35_95.Rdata')
 save(seed_I, file=path)
 
-seed_I<-seeded.intervals(232-95,decay = sqrt(2))
+seed_I<-seeded.intervals(232-113,decay = sqrt(2))
 seed_I<-seed_I[(seed_I[,2]-seed_I[,1])>minLen,]
-seed_I_2<-seed_I+95
-path<-paste('seed_I_96_232.Rdata')
+seed_I_2<-seed_I+113
+path<-paste('seed_I_114_232.Rdata')
 save(seed_I_2, file=path)
 
-rand_I<-random.intervals(n,10000)
-rand_I<-rand_I[(rand_I[,2]-rand_I[,1])>minLen,][1:L,]
-rand_I<-rbind(rand_I,c(1,232))
+#n<-95
+#seed_I<-seeded.intervals(n,decay = sqrt(2))
+#seed_I<-seed_I[(seed_I[,2]-seed_I[,1])>minLen,]
+#path<-paste('seed_I_1_95.Rdata')
+#save(seed_I, file=path)
+
+#seed_I<-seeded.intervals(232-95,decay = sqrt(2))
+#seed_I<-seed_I[(seed_I[,2]-seed_I[,1])>minLen,]
+#seed_I_2<-seed_I+95
+#path<-paste('seed_I_96_232.Rdata')
+#save(seed_I_2, file=path)
+
+#rand_I<-random.intervals(n,10000)
+#rand_I<-rand_I[(rand_I[,2]-rand_I[,1])>minLen,][1:L,]
+#rand_I<-rbind(rand_I,c(1,232))
 
 #path<-paste('seed_I_1_95.Rdata')
 #save(seed_I, file=path)
