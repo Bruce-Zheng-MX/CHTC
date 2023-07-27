@@ -33,3 +33,29 @@
 	448  -  MemoryUsage of job (MB)
 	458188  -  ResidentSetSize of job (KB)
 ...
+006 (11178184.008.000) 2023-07-26 21:53:21 Image size of job updated: 467164
+	448  -  MemoryUsage of job (MB)
+	458188  -  ResidentSetSize of job (KB)
+...
+040 (11178184.008.000) 2023-07-26 22:01:34 Started transferring output files
+...
+040 (11178184.008.000) 2023-07-26 22:01:34 Finished transferring output files
+...
+005 (11178184.008.000) 2023-07-26 22:01:35 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:46:59, Sys 0 00:00:18  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:46:59, Sys 0 00:00:18  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	57028  -  Run Bytes Sent By Job
+	32726544  -  Run Bytes Received By Job
+	57028  -  Total Bytes Sent By Job
+	32726544  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :   256062   524288   1208198 
+	   IoHeavy              :                           0 
+	   Memory (MB)          :      448      512       512 
+
+	Job terminated of its own accord at 2023-07-27T03:00:58Z with exit-code 0.
+...

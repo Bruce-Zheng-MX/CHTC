@@ -45,3 +45,6 @@
 
 	Job terminated of its own accord at 2023-07-27T02:20:23Z with exit-code 0.
 ...
+036 (11178184.-01.000) 2023-07-26 22:13:32 Cluster removed
+	Materialized 25 jobs from -1 items.	Complete
+...
