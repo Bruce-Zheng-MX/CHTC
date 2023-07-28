@@ -13,7 +13,7 @@ library(energy)
 #setwd(dirname(rstudioapi::getSourceEditorContext()$path))
 source("objTest_fctns.R") 
 source("binary_seg.R")
-require("usedist)
+require(usedist)
 geo_dist<-function(x,y){
   acos(sum(sqrt(x)*sqrt(y)))
 }
@@ -38,9 +38,9 @@ L<-10;minLen<-20
 c<-0.1;num_permut<-1000
 #seed_I<-seeded.intervals(n,decay = sqrt(2))
 #seed_I<-seed_I[(seed_I[,2]-seed_I[,1])>minLen,]
-seed_I<-get(load("seed_I_comp_1_264.Rdata"))
+seed_I<-get(load("seed_I_comp_1_170.Rdata"))
 #seed_I_comp_1_264
-#rand_I<-get(load("seed_I_114_171.Rdata"))
+rand_I<-get(load("seed_I_172_264.Rdata"))
 #rand_I<-random.intervals(n,10000)
 #rand_I<-rand_I[(rand_I[,2]-rand_I[,1])>minLen,][1:L,]
 #rand_I<-rbind(rand_I,c(1,nrow(Data)))
@@ -68,7 +68,7 @@ max_stat_index<-c();p_val_interval<-c();critical_value_interval<-c()
       data_permut<-data[sample(nrow(data)),]
     }else{data_permut<-data}
   #distmat<-as.matrix(dist(data_permut , method = 'euclidean' ))
-  distmat<-as.matrix(distx_make(data_permut,geo_dist))
+  distmat<-as.matrix(dist_make(data_permut,geo_dist))
   test<-c()
   for (cp in seq(n*c,n*(1-c),1)){
     seg1<-data_permut[1:cp,];seg2<-data_permut[(cp+1):n,]
