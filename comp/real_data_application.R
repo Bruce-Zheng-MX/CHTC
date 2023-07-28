@@ -38,9 +38,8 @@ L<-10;minLen<-20
 c<-0.1;num_permut<-1000
 #seed_I<-seeded.intervals(n,decay = sqrt(2))
 #seed_I<-seed_I[(seed_I[,2]-seed_I[,1])>minLen,]
-seed_I<-get(load("seed_I_comp_1_170.Rdata"))
-#seed_I_comp_1_264
-rand_I<-get(load("seed_I_172_264.Rdata"))
+seed_I<-get(load("seed_I_1_126.Rdata"))
+rand_I<-get(load("seed_I_128_264.Rdata"))
 #rand_I<-random.intervals(n,10000)
 #rand_I<-rand_I[(rand_I[,2]-rand_I[,1])>minLen,][1:L,]
 #rand_I<-rbind(rand_I,c(1,nrow(Data)))

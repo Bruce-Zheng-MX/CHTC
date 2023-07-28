@@ -111,17 +111,17 @@ c<-0.1;num_permut<-1000
 #seed_I<-seeded.intervals(71-34,decay = sqrt(2))
 #seed_I<-seed_I[(seed_I[,2]-seed_I[,1])>minLe
 
-seed_I<-seeded.intervals(170,decay = sqrt(2))
+seed_I<-seeded.intervals(126,decay = sqrt(2))
 seed_I<-seed_I[(seed_I[,2]-seed_I[,1])>minLen,]
 nrow(seed_I)
-path<-paste('seed_I_comp_1_170.Rdata')
+path<-paste('seed_I_1_126.Rdata')
 save(seed_I, file=path)
 
 
-seed_I<-seeded.intervals(264-171,decay = sqrt(2))
+seed_I<-seeded.intervals(264-127,decay = sqrt(2))
 seed_I<-seed_I[(seed_I[,2]-seed_I[,1])>minLen,]
-seed_I_2<-seed_I+171
-path<-paste('seed_I_172_264.Rdata')
+seed_I_2<-seed_I+127
+path<-paste('seed_I_128_264.Rdata')
 save(seed_I_2, file=path)
 
 
