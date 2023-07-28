@@ -1,0 +1,45 @@
+000 (11188596.027.000) 2023-07-27 22:50:50 Job submitted from host: <128.104.101.92:9618?addrs=128.104.101.92-9618+[2607-f388-107c-501-a236-9fff-fe3c-caa8]-9618&alias=submit2.chtc.wisc.edu&noUDP&sock=schedd_1879732_618e>
+...
+040 (11188596.027.000) 2023-07-27 22:53:36 Started transferring input files
+	Transferring to host: <128.105.69.229:9618?addrs=128.105.69.229-9618+[2607-f388-2200-100-eaeb-d3ff-fe40-1104]-9618&alias=e2612.chtc.wisc.edu&noUDP&sock=slot1_68_61344_25b8_52673>
+...
+040 (11188596.027.000) 2023-07-27 22:53:41 Finished transferring input files
+...
+001 (11188596.027.000) 2023-07-27 22:53:45 Job executing on host: <128.105.69.229:9618?addrs=128.105.69.229-9618+[2607-f388-2200-100-eaeb-d3ff-fe40-1104]-9618&alias=e2612.chtc.wisc.edu&noUDP&sock=startd_18685_ef2f>
+	SlotName: slot1_68@e2612.chtc.wisc.edu
+	CondorScratchDir = "/var/lib/condor/execute/slot1/dir_4176074"
+	Cpus = 1
+	Disk = 1458998
+	IoHeavy = 0
+	Memory = 512
+...
+006 (11188596.027.000) 2023-07-27 22:53:54 Image size of job updated: 282692
+	221  -  MemoryUsage of job (MB)
+	225796  -  ResidentSetSize of job (KB)
+...
+006 (11188596.027.000) 2023-07-27 22:58:55 Image size of job updated: 283248
+	233  -  MemoryUsage of job (MB)
+	237828  -  ResidentSetSize of job (KB)
+...
+040 (11188596.027.000) 2023-07-27 23:20:39 Started transferring output files
+...
+040 (11188596.027.000) 2023-07-27 23:20:39 Finished transferring output files
+...
+005 (11188596.027.000) 2023-07-27 23:20:39 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:26:23, Sys 0 00:00:09  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:26:23, Sys 0 00:00:09  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	57934  -  Run Bytes Sent By Job
+	32668040  -  Run Bytes Received By Job
+	57934  -  Total Bytes Sent By Job
+	32668040  -  Total Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.99        1         1 
+	   Disk (KB)            : 256033      524288   1458998 
+	   IoHeavy              :                            0 
+	   Memory (MB)          :    233         512       512 
+
+	Job terminated of its own accord at 2023-07-28T04:20:39Z with exit-code 0.
+...
