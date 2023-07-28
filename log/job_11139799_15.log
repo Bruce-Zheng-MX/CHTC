@@ -1,0 +1,43 @@
+040 (11139799.015.000) 2023-07-19 21:18:22 Started transferring input files
+	Transferring to host: <128.105.69.227:9618?addrs=128.105.69.227-9618+[2607-f388-2200-100-eaeb-d3ff-fe40-155c]-9618&alias=e2610.chtc.wisc.edu&noUDP&sock=slot1_170_4008194_0569_11324>
+...
+040 (11139799.015.000) 2023-07-19 21:18:24 Finished transferring input files
+...
+001 (11139799.015.000) 2023-07-19 21:18:25 Job executing on host: <128.105.69.227:9618?addrs=128.105.69.227-9618+[2607-f388-2200-100-eaeb-d3ff-fe40-155c]-9618&alias=e2610.chtc.wisc.edu&noUDP&sock=startd_18808_4d56>
+	SlotName: slot1_170@e2610.chtc.wisc.edu
+	CondorScratchDir = "/var/lib/condor/execute/slot1/dir_2083681"
+	Cpus = 1
+	Disk = 1458998
+	IoHeavy = 0
+	Memory = 512
+...
+006 (11139799.015.000) 2023-07-19 21:18:34 Image size of job updated: 275808
+	252  -  MemoryUsage of job (MB)
+	257392  -  ResidentSetSize of job (KB)
+...
+006 (11139799.015.000) 2023-07-19 21:18:40 Image size of job updated: 398788
+	252  -  MemoryUsage of job (MB)
+	257392  -  ResidentSetSize of job (KB)
+...
+040 (11139799.015.000) 2023-07-19 21:18:40 Started transferring output files
+...
+040 (11139799.015.000) 2023-07-19 21:18:40 Finished transferring output files
+...
+005 (11139799.015.000) 2023-07-19 21:18:40 Job terminated.
+	(1) Normal termination (return value 1)
+		Usr 0 00:00:10, Sys 0 00:00:02  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:10, Sys 0 00:00:02  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	3154  -  Run Bytes Sent By Job
+	32725180  -  Run Bytes Received By Job
+	3154  -  Total Bytes Sent By Job
+	32725180  -  Total Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.18        1         1 
+	   Disk (KB)            : 256407      524288   1458998 
+	   IoHeavy              :                            0 
+	   Memory (MB)          :    252         512       512 
+
+	Job terminated of its own accord at 2023-07-20T02:18:40Z with exit-code 1.
+...
