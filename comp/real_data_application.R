@@ -13,6 +13,10 @@ library(energy)
 #setwd(dirname(rstudioapi::getSourceEditorContext()$path))
 source("objTest_fctns.R") 
 source("binary_seg.R")
+require("usedist)
+geo_dist<-function(x,y){
+  acos(sum(sqrt(x)*sqrt(y)))
+}
 
 elec<-read.csv("Net_generation_for_all_sectors.csv")
 #names(elec)
@@ -63,8 +67,8 @@ max_stat_index<-c();p_val_interval<-c();critical_value_interval<-c()
     if (j!=0){
       data_permut<-data[sample(nrow(data)),]
     }else{data_permut<-data}
-  distmat<-as.matrix(dist(data_permut , method = 'euclidean' ))
-  
+  #distmat<-as.matrix(dist(data_permut , method = 'euclidean' ))
+  distmat<-as.matrix(distx_make(data_permut,geo_dist))
   test<-c()
   for (cp in seq(n*c,n*(1-c),1)){
     seg1<-data_permut[1:cp,];seg2<-data_permut[(cp+1):n,]

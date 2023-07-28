@@ -8,7 +8,7 @@ export RHOME=$PWD/R
 export R_LIBS=$PWD/packages
 
 # run your script
-Rscript -e 'install.packages(c("wbs","not"), repos="https://cloud.r-project.org")'
+Rscript -e 'install.packages(c("wbs","usedist"), repos="https://cloud.r-project.org")'
 Rscript real_data_application.R $1 $2
 
 #Rscript parallel_permute.R $1
