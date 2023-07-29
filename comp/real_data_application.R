@@ -38,8 +38,9 @@ L<-10;minLen<-20
 c<-0.1;num_permut<-1000
 #seed_I<-seeded.intervals(n,decay = sqrt(2))
 #seed_I<-seed_I[(seed_I[,2]-seed_I[,1])>minLen,]
-seed_I<-get(load("seed_I_1_126.Rdata"))
-rand_I<-get(load("seed_I_128_264.Rdata"))
+seed_I<-get(load("seed_I_1_99.Rdata"))
+rand_I<-get(load("seed_I_158_264.Rdata"))
+seed_I2<-get(load("seed_I_128_156.Rdata"))
 #rand_I<-random.intervals(n,10000)
 #rand_I<-rand_I[(rand_I[,2]-rand_I[,1])>minLen,][1:L,]
 #rand_I<-rbind(rand_I,c(1,nrow(Data)))
@@ -55,8 +56,9 @@ max_stat_index<-c();p_val_interval<-c();critical_value_interval<-c()
   i<-iter
   if (type==1){
   data<-Data[seed_I[i,1]:seed_I[i,2],]
-}else {data<-Data[rand_I[i,1]:rand_I[i,2],]}
-  #data<-Data[seed_I[i,1]:seed_I[i,2],]
+}else if(type==2){data<-Data[rand_I[i,1]:rand_I[i,2],]}else{data<-Data[seed_I2[i,1]:seed_I[i,2],]}  
+#data<-Data[seed_I[i,1]:seed_I[i,2],]
+  
   n<-nrow(data)
 
   max_stat<-c();
