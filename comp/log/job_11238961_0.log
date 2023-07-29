@@ -27,3 +27,28 @@
 	341  -  MemoryUsage of job (MB)
 	348204  -  ResidentSetSize of job (KB)
 ...
+040 (11238961.000.000) 2023-07-28 20:25:28 Started transferring output files
+...
+040 (11238961.000.000) 2023-07-28 20:25:28 Finished transferring output files
+...
+005 (11238961.000.000) 2023-07-28 20:25:29 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:27:17, Sys 0 00:00:04  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:27:17, Sys 0 00:00:04  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	56036  -  Run Bytes Sent By Job
+	32668232  -  Run Bytes Received By Job
+	56036  -  Total Bytes Sent By Job
+	32668232  -  Total Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.99        1         1 
+	   Disk (KB)            : 255076      524288   1458998 
+	   IoHeavy              :                            0 
+	   Memory (MB)          :    341         512       512 
+
+	Job terminated of its own accord at 2023-07-29T01:25:27Z with exit-code 0.
+...
+036 (11238961.-01.000) 2023-07-28 20:29:05 Cluster removed
+	Materialized 41 jobs from -1 items.	Complete
+...
