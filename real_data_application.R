@@ -35,8 +35,8 @@ iter<-as.numeric(commandArgs(TRUE)[1])
 type<-as.numeric(commandArgs(TRUE)[2])
 L<-10;minLen<-10
 c<-0.2;num_permut<-1000
-seed_I<-get(load("seed_I_1_85_minLen10.Rdata"))
-rand_I<-get(load("seed_I_105_232_minLen10.Rdata"))
+seed_I<-get(load("seed_I_1_66_minLen10.Rdata"))
+rand_I<-get(load("seed_I_121_232_minLen10.Rdata"))
 #iterate every interval
 max_stat_index<-c();p_val_interval<-c();critical_value_interval<-c()
 
