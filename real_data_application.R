@@ -33,16 +33,9 @@ n<-nrow(Data)
 
 iter<-as.numeric(commandArgs(TRUE)[1])
 type<-as.numeric(commandArgs(TRUE)[2])
-L<-10;minLen<-20
-c<-0.1;num_permut<-1000
-#seed_I<-seeded.intervals(n,decay = sqrt(2))
-#seed_I<-seed_I[(seed_I[,2]-seed_I[,1])>minLen,]
-seed_I<-get(load("seed_I_35_71.Rdata"))
-rand_I<-get(load("seed_I_114_171.Rdata"))
-#rand_I<-random.intervals(n,10000)
-#rand_I<-rand_I[(rand_I[,2]-rand_I[,1])>minLen,][1:L,]
-#rand_I<-rbind(rand_I,c(1,nrow(Data)))
-
+L<-10;minLen<-10
+c<-0.2;num_permut<-1000
+seed_I<-get(load("seed_I_1_232_minL10.Rdata"))
 #iterate every interval
 max_stat_index<-c();p_val_interval<-c();critical_value_interval<-c()
 

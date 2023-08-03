@@ -1,5 +1,0 @@
-gcc -I"/var/lib/condor/execute/slot1/dir_1081295/R/lib64/R/include" -DNDEBUG   -I/usr/local/include   -fpic  -g -O2  -c wbs.c -o wbs.o
-gcc -I"/var/lib/condor/execute/slot1/dir_1081295/R/lib64/R/include" -DNDEBUG   -I/usr/local/include   -fpic  -g -O2  -c wbs_init.c -o wbs_init.o
-gcc -shared -L/usr/local/lib64 -o wbs.so wbs.o wbs_init.o
-[1] 1 1 1
-[1]  13 264

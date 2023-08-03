@@ -105,20 +105,20 @@ seedBS <- function (x, decay = sqrt(2), ...){
   return(results)
 }
 
-L<-100;minLen<-20
-c<-0.1;num_permut<-1000
+L<-100;minLen<-10
+c<-0.2;num_permut<-1000
 
-seed_I<-seeded.intervals(71-34,decay = sqrt(2))
+seed_I<-seeded.intervals(232,decay = sqrt(2))
 seed_I<-seed_I[(seed_I[,2]-seed_I[,1])>minLen,]
-seed_I<-seed_I+34
-path<-paste('seed_I_35_71.Rdata')
+seed_I<-seed_I
+path<-paste('seed_I_1_232_minL10.Rdata')
 save(seed_I, file=path)
 
-seed_I<-seeded.intervals(171-113,decay = sqrt(2))
-seed_I<-seed_I[(seed_I[,2]-seed_I[,1])>minLen,]
-seed_I_2<-seed_I+113
-path<-paste('seed_I_114_171.Rdata')
-save(seed_I_2, file=path)
+#seed_I<-seeded.intervals(171-113,decay = sqrt(2))
+#seed_I<-seed_I[(seed_I[,2]-seed_I[,1])>minLen,]
+#seed_I_2<-seed_I+113
+#path<-paste('seed_I_114_171.Rdata')
+#save(seed_I_2, file=path)
 
 #n<-95
 #seed_I<-seeded.intervals(n,decay = sqrt(2))
