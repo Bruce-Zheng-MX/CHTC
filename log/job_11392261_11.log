@@ -37,3 +37,37 @@
 	494  -  MemoryUsage of job (MB)
 	504868  -  ResidentSetSize of job (KB)
 ...
+006 (11392261.011.000) 2023-08-02 21:44:54 Image size of job updated: 508032
+	494  -  MemoryUsage of job (MB)
+	504868  -  ResidentSetSize of job (KB)
+...
+006 (11392261.011.000) 2023-08-02 21:59:55 Image size of job updated: 509508
+	494  -  MemoryUsage of job (MB)
+	504868  -  ResidentSetSize of job (KB)
+...
+006 (11392261.011.000) 2023-08-02 22:04:56 Image size of job updated: 509508
+	494  -  MemoryUsage of job (MB)
+	505064  -  ResidentSetSize of job (KB)
+...
+040 (11392261.011.000) 2023-08-02 22:10:32 Started transferring output files
+...
+040 (11392261.011.000) 2023-08-02 22:10:33 Finished transferring output files
+...
+005 (11392261.011.000) 2023-08-02 22:10:37 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:59:25, Sys 0 00:00:38  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:59:25, Sys 0 00:00:38  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	58060  -  Run Bytes Sent By Job
+	32727852  -  Run Bytes Received By Job
+	58060  -  Total Bytes Sent By Job
+	32727852  -  Total Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.99        1         1 
+	   Disk (KB)            : 255810      524288   1208198 
+	   IoHeavy              :                            0 
+	   Memory (MB)          :    494         512       512 
+
+	Job terminated of its own accord at 2023-08-03T03:10:31Z with exit-code 0.
+...

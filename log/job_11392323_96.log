@@ -1,0 +1,19 @@
+000 (11392323.096.000) 2023-08-03 01:35:42 Job submitted from host: <128.104.101.92:9618?addrs=128.104.101.92-9618+[2607-f388-107c-501-a236-9fff-fe3c-caa8]-9618&alias=submit2.chtc.wisc.edu&noUDP&sock=schedd_1879732_618e>
+...
+040 (11392323.096.000) 2023-08-03 01:37:13 Started transferring input files
+	Transferring to host: <128.105.69.159:9618?addrs=128.105.69.159-9618+[2607-f388-2200-100-1270-fdff-fe56-c33c]-9618&alias=e4092.chtc.wisc.edu&noUDP&sock=slot1_30_1018208_65b6_78115>
+...
+040 (11392323.096.000) 2023-08-03 01:37:15 Finished transferring input files
+...
+007 (11392323.096.000) 2023-08-03 01:37:16 Shadow exception!
+	Error from slot1_30@e4092.chtc.wisc.edu: SHADOW at 128.104.101.92 failed to send file(s) to <128.105.69.159:42805>: |Error: reading from file /home/mzheng54/cpd/binary_segmentation/seed_I_105_232_minL10.Rdata: (errno 2) No such file or directory; STARTER failed to receive file(s) from <128.104.101.92:9618>
+	0  -  Run Bytes Sent By Job
+	32727432  -  Run Bytes Received By Job
+...
+012 (11392323.096.000) 2023-08-03 01:37:18 Job was held.
+	Transfer input files failure at access point submit2 while sending files to execution point slot1_30@e4092.chtc.wisc.edu. Details: reading from file /home/mzheng54/cpd/binary_segmentation/seed_I_105_232_minL10.Rdata: (errno 2) No such file or directory
+	Code 13 Subcode 2
+...
+009 (11392323.096.000) 2023-08-03 01:57:09 Job was aborted.
+	via condor_rm (by user mzheng54)
+...
