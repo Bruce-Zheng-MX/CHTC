@@ -1,5 +1,5 @@
 #!/bin/bash
-for a in {1..165}; 
+for a in {1..148}; 
   do 
      echo "$a"
   done;

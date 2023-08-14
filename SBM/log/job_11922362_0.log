@@ -19,3 +19,25 @@
 	453  -  MemoryUsage of job (MB)
 	463648  -  ResidentSetSize of job (KB)
 ...
+006 (11922362.000.000) 2023-08-13 21:38:01 Image size of job updated: 524292
+	512  -  MemoryUsage of job (MB)
+	524288  -  ResidentSetSize of job (KB)
+...
+004 (11922362.000.000) 2023-08-13 21:38:01 Job was evicted.
+	(0) CPU times
+		Usr 0 00:00:07, Sys 0 00:03:23  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	35628408  -  Run Bytes Received By Job
+	Partitionable Resources :     Usage  Request Allocated 
+	   Cpus                 :      0.96        1         1 
+	   Disk (KB)            : 257763      524288   1208198 
+	   IoHeavy              :                            0 
+	   Memory (MB)          :    512         512       512 
+...
+009 (11922362.000.000) 2023-08-13 21:38:01 Job was aborted.
+	via condor_rm (by user mzheng54)
+...
+036 (11922362.-01.000) 2023-08-13 21:38:01 Cluster removed
+	Materialized 165 jobs from -1 items.	Incomplete
+...
