@@ -14,6 +14,7 @@ c<-0.1;num_permut<-1000
 
 seed_I<-seeded.intervals(400,decay = sqrt(2))
 seed_I<-seed_I[(seed_I[,2]-seed_I[,1])>minLen,]
+seed_I<-seed_I[seed_I[,2]<100|seed_I[,1]>100,]
 nrow(seed_I)
 
 
