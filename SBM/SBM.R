@@ -1,112 +1,32 @@
 
-setwd(dirname(rstudioapi::getSourceEditorContext()$path))
+#setwd(dirname(rstudioapi::getSourceEditorContext()$path))
 
 
 source("objTest_fctns.R") 
-source("binary_segmentation.R") 
-require(sbm)
+source("binary_seg.R") 
+#require(sbm)
 require(igraph)
-require(ecp)
-
-
-n_nodes<-300
-n1=n2=n3=n4=100
-
-m1<-c()
-for (i in 1:n1){
-  pm <- cbind(c(0.3,0.01,0.01),c(0.01,0.5,0.02),c(0.01,0.02,0.3))
-  g1 <- sample_sbm(n_nodes, pref.matrix = pm, block.sizes = c(50,150,100))
-  m<-c(as.matrix(as.matrix(g1, "adjacency")))
-  m1<-rbind(m1,m)
-}
-for (i in 1:n2){
-  pm <- cbind(c(0.6,0.05,0.02),c(0.05,0.2,0.01),c(0.02,0.01,0.6))
-  g2 <- sample_sbm(n_nodes, pref.matrix = pm, block.sizes = c(50,150,100))
-  m<-c(as.matrix(as.matrix(g2, "adjacency")))
-
-  m1<-rbind(m1,m)
-}
-
-for (i in 1:n3){
-  pm <- cbind(c(0.6,0.05,0.02),c(0.05,0.2,0.01),c(0.02,0.01,0.6))
-  g3 <- sample_sbm(n_nodes, pref.matrix = pm, block.sizes = c(100,100,100))
-  m<-c(as.matrix(as.matrix(g3, "adjacency")))
-  m1<-rbind(m1,m)
-}
-for (i in 1:n4){
-  pm <- cbind(c(0.6,0.01),c(0.01,0.3))
-  g4 <- sample_sbm(n_nodes, pref.matrix = pm, block.sizes = c(200,100))
-  m<-c(as.matrix(as.matrix(g4, "adjacency")))
-  m1<-rbind(m1,m)
-}
-
-n_nodes=200
-m1<-c()
-for (i in 1:n1){
-  pm <- cbind(c(0.3,0.01,0.01),c(0.01,0.5,0.02),c(0.01,0.02,0.3))
-  g1 <- sample_sbm(n_nodes, pref.matrix = pm, block.sizes = c(50,50,100))
-  m<-c(as.matrix(as.matrix(g1, "adjacency")))
-  m1<-rbind(m1,m)
-}
-
-for (i in 1:n2){
-  pm <- cbind(c(0.6,0.05,0.02),c(0.05,0.2,0.01),c(0.02,0.01,0.6))
-  g2 <- sample_sbm(n_nodes, pref.matrix = pm, block.sizes = c(50,50,100))
-  m<-c(as.matrix(as.matrix(g2, "adjacency")))
-  
-  m1<-rbind(m1,m)
-}
-
-for (i in 1:n3){
-  pm <- cbind(c(0.6,0.05,0.02),c(0.05,0.2,0.01),c(0.02,0.01,0.6))
-  g3 <- sample_sbm(n_nodes, pref.matrix = pm, block.sizes = c(75,75,50))
-  m<-c(as.matrix(as.matrix(g3, "adjacency")))
-  m1<-rbind(m1,m)
-}
-for (i in 1:n4){
-  pm <- cbind(c(0.6,0.01),c(0.01,0.3))
-  g4 <- sample_sbm(n_nodes, pref.matrix = pm, block.sizes = c(150,50))
-  m<-c(as.matrix(as.matrix(g4, "adjacency")))
-  m1<-rbind(m1,m)
-}
-save(m1,file="SBM_data_noeds200.Rdata")
-
-distmat<-as.matrix(dist( m1, method = 'manhattan' ))
-dim(distmat)
-save(distmat,file="SBM_dist_nodes200.Rdata")
-
-y_ecp<-e.divisive(X=m1,sig.lvl=0.01,R=1000,k=NULL,min.size=50)
-y_ecp$estimates
-
-#kcp
-y_kcp<-kcpa(X=m1, L=6, C=0.05)
-y_kcp
-
+#require(ecp)
 
 iter<-as.numeric(commandArgs(TRUE)[1])
-type<-as.numeric(commandArgs(TRUE)[2])
-
 L<-10;minLen<-10
 c<-0.1;num_permut<-1000
 
 seed_I<-seeded.intervals(400,decay = sqrt(2))
 seed_I<-seed_I[(seed_I[,2]-seed_I[,1])>minLen,]
 nrow(seed_I)
-#save(seed_I,file="seed_I_SBM.Rdata")
-#seed_I<-get(load("seed_I_SBM.Rdata"))
 
 
 max_stat_index<-c();p_val_interval<-c();critical_value_interval<-c()
 type<-1
-iter<-200
-i<-iter
-Data<-m1
+i=iter
+
+Data<-get(load("SBM_data_nodes200.Rdata"))
 if (type==1){
   data<-Data[seed_I[i,1]:seed_I[i,2],]
 }else {data<-Data[rand_I[i,1]:rand_I[i,2],]}
 n<-nrow(data)
 max_stat<-c();
-
 
 for (j in 0:100){
   cat(i,'th interval',j,"permutation","\n")
