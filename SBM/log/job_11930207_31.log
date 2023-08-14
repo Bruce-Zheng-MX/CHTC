@@ -1,0 +1,41 @@
+000 (11930207.031.000) 2023-08-14 02:57:22 Job submitted from host: <128.104.101.92:9618?addrs=128.104.101.92-9618+[2607-f388-107c-501-a236-9fff-fe3c-caa8]-9618&alias=submit2.chtc.wisc.edu&noUDP&sock=schedd_1879732_618e>
+...
+040 (11930207.031.000) 2023-08-14 02:57:56 Started transferring input files
+	Transferring to host: <128.105.69.206:9618?addrs=128.105.69.206-9618+[2607-f388-2200-100-eaeb-d3ff-fe40-2844]-9618&alias=e2589.chtc.wisc.edu&noUDP&sock=slot1_13_12425_4952_126201>
+...
+040 (11930207.031.000) 2023-08-14 02:57:58 Finished transferring input files
+...
+001 (11930207.031.000) 2023-08-14 02:57:59 Job executing on host: <128.105.69.206:9618?addrs=128.105.69.206-9618+[2607-f388-2200-100-eaeb-d3ff-fe40-2844]-9618&alias=e2589.chtc.wisc.edu&noUDP&sock=startd_18780_18af>
+	SlotName: slot1_13@e2589.chtc.wisc.edu
+	CondorScratchDir = "/var/lib/condor/execute/slot1/dir_2000527"
+	Cpus = 1
+	Disk = 1458998
+	IoHeavy = 0
+	Memory = 512
+...
+006 (11930207.031.000) 2023-08-14 02:58:08 Image size of job updated: 524288
+	498  -  MemoryUsage of job (MB)
+	509120  -  ResidentSetSize of job (KB)
+...
+040 (11930207.031.000) 2023-08-14 02:59:19 Started transferring output files
+...
+040 (11930207.031.000) 2023-08-14 02:59:19 Finished transferring output files
+...
+005 (11930207.031.000) 2023-08-14 02:59:19 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:01:15, Sys 0 00:00:02  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:01:15, Sys 0 00:00:02  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	5900  -  Run Bytes Sent By Job
+	35628108  -  Run Bytes Received By Job
+	5900  -  Total Bytes Sent By Job
+	35628108  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :                 1         1 
+	   Disk (KB)            :   257758   524288   1458998 
+	   IoHeavy              :                           0 
+	   Memory (MB)          :      498      512       512 
+
+	Job terminated of its own accord at 2023-08-14T07:59:19Z with exit-code 0.
+...

@@ -26,3 +26,6 @@
 	Error from slot1_30@e2563.chtc.wisc.edu: Job has gone over memory limit of 512 megabytes. Peak usage: 512 megabytes.
 	Code 34 Subcode 0
 ...
+009 (11922363.001.000) 2023-08-14 02:04:42 Job was aborted.
+	via condor_rm (by user mzheng54)
+...

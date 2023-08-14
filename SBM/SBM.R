@@ -9,14 +9,14 @@ require(igraph)
 #require(ecp)
 
 iter<-as.numeric(commandArgs(TRUE)[1])
-L<-10;minLen<-10
+L<-10;minLen<-30
 c<-0.1;num_permut<-1000
 
 seed_I<-seeded.intervals(400,decay = sqrt(2))
 seed_I<-seed_I[(seed_I[,2]-seed_I[,1])>minLen,]
-seed_I<-seed_I[seed_I[,2]<100|seed_I[,1]>100,]
-seed_I<-seed_I[seed_I[,2]<200|seed_I[,1]>200,]
-seed_I<-seed_I[seed_I[,2]<300|seed_I[,1]>300,]
+#seed_I<-seed_I[seed_I[,2]<100|seed_I[,1]>100,]
+#seed_I<-seed_I[seed_I[,2]<200|seed_I[,1]>200,]
+#seed_I<-seed_I[seed_I[,2]<300|seed_I[,1]>300,]
 nrow(seed_I)
 
 
