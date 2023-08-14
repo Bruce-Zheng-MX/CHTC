@@ -1,28 +1,3 @@
-000 (11922361.016.000) 2023-08-13 21:26:14 Job submitted from host: <128.104.101.92:9618?addrs=128.104.101.92-9618+[2607-f388-107c-501-a236-9fff-fe3c-caa8]-9618&alias=submit2.chtc.wisc.edu&noUDP&sock=schedd_1879732_618e>
-...
-040 (11922361.016.000) 2023-08-13 21:27:21 Started transferring input files
-	Transferring to host: <128.105.69.153:9618?addrs=128.105.69.153-9618+[2607-f388-2200-100-1270-fdff-fe56-45dc]-9618&alias=e4086.chtc.wisc.edu&noUDP&sock=slot1_13_2089088_3bd1_107258>
-...
-040 (11922361.016.000) 2023-08-13 21:27:23 Finished transferring input files
-...
-001 (11922361.016.000) 2023-08-13 21:27:24 Job executing on host: <128.105.69.153:9618?addrs=128.105.69.153-9618+[2607-f388-2200-100-1270-fdff-fe56-45dc]-9618&alias=e4086.chtc.wisc.edu&noUDP&sock=startd_17329_d4c3>
-	SlotName: slot1_13@e4086.chtc.wisc.edu
-	CondorScratchDir = "/var/lib/condor/execute/slot1/dir_2658361"
-	Cpus = 1
-	Disk = 1208198
-	IoHeavy = 0
-	Memory = 512
-...
-006 (11922361.016.000) 2023-08-13 21:27:32 Image size of job updated: 524288
-	511  -  MemoryUsage of job (MB)
-	522700  -  ResidentSetSize of job (KB)
-...
-007 (11922361.016.000) 2023-08-13 21:27:36 Shadow exception!
-	Error from slot1_13@e4086.chtc.wisc.edu: Job has gone over memory limit of 512 megabytes. Peak usage: 512 megabytes.
-	0  -  Run Bytes Sent By Job
-	35628456  -  Run Bytes Received By Job
-...
-012 (11922361.016.000) 2023-08-13 21:27:36 Job was held.
-	Error from slot1_13@e4086.chtc.wisc.edu: Job has gone over memory limit of 512 megabytes. Peak usage: 512 megabytes.
-	Code 34 Subcode 0
+009 (11922361.016.000) 2023-08-13 21:33:12 Job was aborted.
+	via condor_rm (by user mzheng54)
 ...
